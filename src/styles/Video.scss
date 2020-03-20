@@ -6,9 +6,15 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin: auto;
 
     span {
         font-size: 40px;
         color: $error;
+    }
+
+    .backup {
+        font-size: 36px;
+        color: #999;
     }
 }

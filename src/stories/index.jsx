@@ -12,6 +12,6 @@ storiesOf('Button', module)
     ));
 
 storiesOf('Video', module)
-    .add('with text', () => (
-        <Video src='http://video.699pic.com/videos/56/39/80/Gex0D1hxZxUR1512563980.mp4' />
+    .add('mp4', () => (
+        <Video src='http://video.699pic.com/videos/56/39/80/Gex0D1hxZxUR1512563980.mp4' width='1600' height='800' />
     ))
