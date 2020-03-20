@@ -1,0 +1,9 @@
+@import '../src/styles/index';
+
+.App {
+  text-align: center;
+
+  .test {
+    color: $error;
+  }
+}
