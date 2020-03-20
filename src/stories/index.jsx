@@ -13,5 +13,5 @@ storiesOf('Button', module)
 
 storiesOf('Video', module)
     .add('with text', () => (
-        <Video />
+        <Video src='http://video.699pic.com/videos/56/39/80/Gex0D1hxZxUR1512563980.mp4' />
     ))
