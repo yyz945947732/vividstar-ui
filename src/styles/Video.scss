@@ -1,5 +1,7 @@
 @import './index.scss';
 
+$btSize:120px;
+
 .Video {
     display: flex;
     height: 500px;
@@ -7,6 +9,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    position: relative;
 
     span {
         font-size: 40px;
@@ -16,5 +19,36 @@
     .backup {
         font-size: 36px;
         color: #999;
+    }
+
+    .bt {
+        position: absolute;
+        z-index: 999;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: $btSize;
+        height: $btSize;
+        border: 8px solid $red;
+        color: $red;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .play {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            $borderWidth: $btSize/6;
+            border-width: $borderWidth 0 $borderWidth $borderWidth * 2;
+            border-color: transparent transparent transparent $red;
+            border-style: solid;
+            margin-left: $borderWidth/1.5;
+        }
     }
 }
